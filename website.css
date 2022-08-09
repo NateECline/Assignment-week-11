@@ -1,0 +1,17 @@
+.position{
+    position:relative;
+    left:510px;
+    width:900px;
+    height:900px;
+}
+
+.Butty{
+    background-color: purple;
+    color:azure;
+    border-radius: 5px;
+    width:125px;
+    height:35px;
+    position:absolute;
+    left:608px;
+    top:30px;
+}
