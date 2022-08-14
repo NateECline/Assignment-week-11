@@ -146,7 +146,7 @@ function isWinner() {
       let currentPlayerText = document.querySelector('.board___player-turn');
       if (currentPlayer() === 'X') {
         currentPlayerText.innerHTML = `
-          <div class="congratulations">Congratulations ${playerX.name}</div>
+          <div class="alert alert-success" role="alert">Congratulations ${playerX.name}</div>
           <div class="u-r-winner">You are our winner!</div>
         `;
         winner = true;
@@ -154,8 +154,8 @@ function isWinner() {
         return true;
       } else {
         currentPlayerText.innerHTML = `
-          <div class="congratulations">Congratulations ${playerY.name}</div>
-          <div class="u-r-winner">You are our winner!</div>
+          <div class="alert alert-success" role="alert">Congratulations ${playerY.name}</div>
+          <div class="u-r-winner">You win!</div>
         `;
         winner = true;
         removeCellClickListener();
